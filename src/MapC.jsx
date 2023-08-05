@@ -5,7 +5,6 @@ import { YMaps, Map, Placemark } from "react-yandex-maps";
 const mapState = {
   center: [55.76, 37.64],
   zoom: 17,
-  controls: []
 };
 
 const MapC = () => {
@@ -44,13 +43,7 @@ const MapC = () => {
 
   return (
     <div>
-      <div
-        className={
-          isHideYandexInput
-            ? "input__wrapper_hide-dropdown"
-            : "input__wrapper_show-dropdown"
-        }
-      >
+      <div>
         <input
           ref={inputRef}
           value={inputValue}
@@ -62,7 +55,7 @@ const MapC = () => {
       <YMaps
         query={{
           load: "package.full",
-          apikey: "ключ ввести"
+          apikey: "b7dbc97b-5b77-4083-b494-db026872f170"
         }}
       >
         <Map
